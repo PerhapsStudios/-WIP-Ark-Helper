@@ -8,9 +8,9 @@ async def on_ready():
   print("ready to perform actions!")
 
 @bot.command()
-async def embed(ctx):
-  embed = discord.Embed(title="Embed Boi", description="Youtube channel: [click here to redirect](https://www.youtube.com/watch?v=dQw4w9WgXcQ)", color=discord.Color.green())
-  embed.set_thumbnail(url="https://cdn.discordapp.com/avatars/1157031758831824896/865d23859955e051a08a85946749b4a3.png?size=80")
-  embed.set_image(url="https://cdn.discordapp.com/avatars/1157031758831824896/865d23859955e051a08a85946749b4a3.webp?size=80")
-  await ctx.channel.send(embed=embed)
+async def arkhelp(ctx):
+  embed = discord.Embed(title="Embed Boi", description="Youtube channel: [click here to redirect](https://www.youtube.com/watch?time_continue=1&v=F3h62L3pnMY&embeds_referring_euri=https%3A%2F%2Fwww.bing.com%2F&embeds_referring_origin=https%3A%2F%2Fwww.bing.com&source_ve_path=MjM4NTE&feature=emb_title)", color=discord.Color.green())
+  embed.set_thumbnail(url="https://i.ytimg.com/vi/IZ2UTC0BNpE/maxresdefault.jpg")
+  embed.add_field(name="Beginner guide", value="This is a beginner guide to start your Ark adventure", inline=True)
   
+  await ctx.channel.send(embed=embed)
