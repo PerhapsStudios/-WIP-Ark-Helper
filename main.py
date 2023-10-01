@@ -16,7 +16,7 @@ async def ark(ctx):
 
 @bot.command()
 async def wiki(ctx):
-  embed = discord.Embed(title="Ark helper", description="Wiki: [click here to redirect](https://ark.fandom.com/wiki/Fjordur)", color=discord.Color.green())
+  embed = discord.Embed(title="Wiki helper", description="Wiki: [click here to redirect](https://ark.fandom.com/wiki/Fjordur)", color=discord.Color.green())
   embed.set_thumbnail(url="https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/5/53/Fjordur_DLC.jpg/revision/latest?cb=20220905121625")
   embed.add_field(name="Fjordur Wiki", value="The complete Fjordur wiki", inline=True)
 
@@ -40,10 +40,21 @@ async def mods(ctx):
  embed.add_field(name="Mod guide", value="This is a guide to help you understand mods in Ark", inline=True)
 
 @bot.command()
-async def tips(ctx):
- embed = discord.Embed(title="Tips helper", description
-  
-  await ctx.channel.send(embed=embed)
+async def help(ctx):
+ embed = discord.Embed(title="Help", description="Here are the available commands:", color=discord.Color.green())
+ embed.add_field(name="!ark", value="Ark helper", inline=True)
+ embed.add_field(name="!wiki", value="Wiki helper", inline=True)
+ embed.add_field(name="!dino", value="Dino helper", inline=True)
+ embed.add_field(name="!caves", value="Cave helper", inline=True)
+ embed.add_field(name="!mods", value="Mod helper", inline=True)
+ embed.add_field(name="!help", value="Help command", inline=True)
+
+await ctx.send(embed=embeded)
+
   
 
 bot.run("")
+ 
+  
+
+
